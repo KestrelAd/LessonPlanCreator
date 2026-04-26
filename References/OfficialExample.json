@@ -1,0 +1,117 @@
+{
+  "lesson_overview": {
+    "x01": "Digital Technology",
+    "x02": "3",
+    "x03": "Developing GarageBand skills",
+    "schedule": {
+      "x04": "15/9/2197",
+      "x05": "3",
+      "x06": "Period 4 - 2:05 to 3:05"
+    },
+    "x07": "Year 7"
+  },
+  "learning_outcomes": {
+    "x08": "Explore how to acquire data from a range of digital sources. (ACTDIP025)\nDefine and break down a given task, identifying the purpose. (WATPPS39)\nSafely make solutions using a range of components, equipment and techniques. (WATPPS43)",
+    "x09": ["Refining their established GarageBand skill.", "How to use and manipulate the built in software instruments with the musical typing keyboard.", "Create a 1 minute song using loops and GarageBands built in software instruments."]
+  },
+  "assessment": {
+    "diagnostic": {
+      "x10": "",
+      "x11": "",
+      "x12": ""
+    },
+    "formative": {
+      "x13": "Formative",
+      "x14": "Formative",
+      "x15": ["Story board process. Breaking down how to add a loops and how to manipulate the audio.", "Question and answering students.", "Students to create a 1 minute song using loops and built in software instruments"]
+    },
+    "summative": {
+      "x16": "",
+      "x17": "",
+      "x18": ""
+    }
+  },
+  "monitoring": {
+    "x19": ["Correct use of snaps to 1/16th beat count.", "The use of the native software instruments.", "The usage of loops."],
+    "x20": ["When I'm traveling from student to student I will check that the are quantising to 1/16th beat count and keep reminding the students.", "Monitor how the students are operating GarageBand", "Allow students to ask questions.", "Visual gauge for engagement."]
+  },
+  "prior_knowledge": {
+    "x21": ["The year 7 students have well developed computing skills from year 6.", "They have created an animation last term."]
+  },
+  "preparation_and_resources": {
+    "x22": ["Students Apple laptops.", "GarageBand.", "Compass.", "Introduction to GarageBand booklet."]
+  },
+  "teaching_sequence": {
+    "introduction": {
+      "part1": {
+        "x23": "5min",
+        "x24": ["Gather students from outside the computer lab and direct them to come in, grab a seat and sit down.", "Tell them to sit quietly while you take the roll.", "Take roll"],
+        "x25": "Welcome students in with fist bumps and /or \"sup\".\nDon't take the roll until students have settled down."
+      },
+      "part2": {
+        "x26": "",
+        "x27": "",
+        "x28": ""
+      },
+      "part3": {
+        "x29": "",
+        "x30": "",
+        "x31": ""
+      }
+    },
+    "body": {
+      "part1": {
+        "x32": "5min",
+        "x33": "Tell a dad joke to lighten the students mood.\n\nSignal to begin - \"Eyes on me guys\".\nQuick recap of last lesson.",
+        "x34": "Aiding in knowledge retention by create a positive environment.\n\nWait till you have all the students eyes on you."
+      },
+      "part2": {
+        "x35": "10min",
+        "x36": "Do a story board process on the whiteboard on how to add loops to your timeline and how to manipulate the audio file.",
+        "x37": "<u>Students developing their GarageBand skills.</u>\n\nOn white board draw big boxes and in them write down the correct answers from the students on the process. Working together to achieve to right answers. Ask all students. No-one missing out."
+      },
+      "part3": {
+        "x38": "5min",
+        "x39": "Gather all the students around the middle section of the class and have them watch the projector screen.\n\nTeacher to demonstrate how to open the music typing keyboard and how to use the built in software instrument.",
+        "x40": "<u>Differentiation</u>\nTeacher demonstration to change the way I explain to those who need the extra instruction."
+      },
+      "part4": {
+        "x41": "25min",
+        "x42": "Instruct students to attempt in making a simple 1 minute song using the loops from the loops library and using the built in softwares instruments.\n\nTeacher to walk around student to student, ensuring that they are working on the song and helping anyone that needs it.\n\nTeacher to manage bad behaouring students",
+        "x43": "Inform students that they can use their introduction to GarageBand booklet. Found in Compass.\n\nStudents developing their GarageBand skills"
+      },
+      "part5": {
+        "x44": "5min",
+        "x45": "Pick 3 students at random and ask questions about GarageBand. So every one can see and hear. Concreting the information in.",
+        "x46": "<u><i>Focus questions</i></u> || [\"What is a built in software instrument?\", \"How to add loops?\", \"Do you need to have a musical background.\"]"
+      },
+      "part6": {
+        "x47": "",
+        "x48": "",
+        "x49": ""
+      },
+      "part7": {
+        "x50": "",
+        "x51": "",
+        "x52": ""
+      }
+    },
+    "conclusion": {
+      "part1": {
+        "x53": "5min",
+        "x54": ["Get students to pack up and prepare to leave.", "Ensure all student have uploaded the class work song to compass", "Dismiss class."],
+        "x55": "<u><r>Exit ticket</r></u>\n\nEnsure all students work has been uploaded to the school compass site for me to check before they are allowed to leave."
+      },
+      "part2": {
+        "x56": "",
+        "x57": "",
+        "x58": ""
+      },
+      "part3": {
+        "x59": "",
+        "x60": "",
+        "x61": ""
+      }
+    }
+  }
+}
