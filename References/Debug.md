@@ -28,3 +28,43 @@
     与 Debug #2 完全一致——GBK 终端无法显示 `print_report` 中的 Unicode 符号（`▶`、`✅`）。该错误发生于文件保存完成之后，`.docx` 文件已正常写入磁盘（通过 `ls` 命令确认 `LessonPlan-revised.docx` 存在）。
 * **解决方案**：
     后续对两个文件的调用均改用 `PYTHONIOENCODING=utf-8 python Injection.py <文件名>` 命令，两次执行均成功输出「总体状态 : 成功 ✅」。`LessonPlan-revised.docx` 和 `LessonPlan-zh-revised.docx` 均已正常生成。今后所有 Injection.py 调用统一使用此前缀。
+
+---
+
+### 4
+* **问题描述**：
+    本次默认模式（Default Mode）运行中，`Injection.py` 对 `LessonPlan.json` 和 `LessonPlan-zh.json` 的两次调用，均在运行报告中出现警告：「缺失警告: JSON 中未找到以下 30 个占位符数据，已自动填为空白: x62, x63, x64 ... x91」。
+* **原因分析**：
+    `Template.docx` 模板文件中包含从 `x01` 至 `x91` 共 91 个占位符，而 `GeneratingRules/KeyDefinitions.md` 中仅对 `x01`—`x61` 共 61 个键名有明确定义，`Schema.md` 虽提及 x91 但未提供 x62—x91 的语义定义。当前生成的 JSON 文件完整覆盖了已定义的 x01—x61，x62—x91 的空缺由渲染引擎自动填为空白，不影响文档的最终生成和核心内容呈现。
+* **备注**：
+    两次调用均以「总体状态 : 成功 ✅」结束，`LessonPlan.docx` 和 `LessonPlan-zh.docx` 均已正常写入磁盘。此警告为已知的结构性信息差异（模板比规范文件包含更多占位符），不视为错误。如未来需使用 x62—x91，应优先更新 `KeyDefinitions.md` 以明确其语义定义。
+
+---
+
+### 5
+* **问题描述**：
+    本次默认模式（Default Mode）运行中（教案主题：Lesson 1 of 8 — Game Deconstruction & Scratch Environment Setup），`Injection.py` 对 `LessonPlan.json` 和 `LessonPlan-zh.json` 的两次调用，均在运行报告中再次出现警告：「缺失警告: JSON 中未找到以下 30 个占位符数据，已自动填为空白: x62, x63, x64 ... x91」。
+* **原因分析**：
+    与 Debug #4 完全一致——`Template.docx` 中含 91 个占位符 (x01—x91)，而本次生成的 JSON 仅严格按照 `KeyDefinitions.md` 中已定义的 x01—x61 进行了完整填充，x62—x91 在规范文件中暂无语义定义，因此输出的 JSON 中没有这些键，渲染引擎自动将其填为空白。
+* **备注**：
+    两次调用均以「总体状态 : 成功 ✅」结束，`LessonPlan.docx` 和 `LessonPlan-zh.docx` 均已正常写入磁盘（59143 字节与 60377 字节）。此警告为预期内的结构性信息差异，不视为错误，文档最终内容呈现完整。本次执行从一开始即采用 `PYTHONIOENCODING=utf-8 python Injection.py <文件名>` 命令以预防 Debug #2 与 #3 中描述的 GBK 编码报错，两次调用过程中均未出现 `UnicodeEncodeError`，控制台输出干净。
+
+---
+
+### 6
+* **问题描述**：
+    本次默认模式（Default Mode）运行中（教案主题：Lesson 1 of 8 — Game Deconstruction & Scratch Environment Setup，Year 8），`Injection.py` 对 `LessonPlan.json` 与 `LessonPlan-zh.json` 的两次调用，均在运行报告中再次出现警告：「缺失警告: JSON 中未找到以下 30 个占位符数据，已自动填为空白: x62, x63, x64 ... x91」。
+* **原因分析**：
+    与 Debug #4 与 #5 完全一致——`Template.docx` 中含 91 个占位符 (x01—x91)，而本次生成的 JSON 严格按照 `KeyDefinitions.md` 中已定义的 x01—x61 进行了完整填充（已在生成前用 Python 校验过 `len(set(x-keys)) == 61`），x62—x91 在规范文件中暂无语义定义，因此输出的 JSON 中没有这些键，渲染引擎自动将其填为空白。
+* **备注**：
+    两次调用均以「总体状态 : 成功 ✅」结束，`LessonPlan.docx` 和 `LessonPlan-zh.docx` 均已正常写入磁盘（58943 字节与 60188 字节）。此警告为预期内的结构性信息差异，不视为错误，文档最终内容呈现完整。本次执行从一开始即采用 `PYTHONIOENCODING=utf-8 python Injection.py <文件名>` 命令以预防 Debug #2 与 #3 中描述的 GBK 编码报错，两次调用过程中均未出现 `UnicodeEncodeError`，控制台输出干净。
+
+---
+
+### 7
+* **问题描述**：
+    本次默认模式（Default Mode）运行中（教案主题：Lesson 1 of 8 — Game Deconstruction & Scratch Environment Setup，Year 8，日期 29/04/2026），`Injection.py` 对 `LessonPlan.json` 与 `LessonPlan-zh.json` 的两次调用，再次出现警告：「缺失警告: JSON 中未找到以下 30 个占位符数据，已自动填为空白: x62, x63, x64 ... x91」。
+* **原因分析**：
+    与 Debug #4、#5、#6 完全一致——`Template.docx` 中含 91 个占位符 (x01—x91)，而 `KeyDefinitions.md` 仅对 x01—x61 提供了语义定义，因此本次生成的 JSON 严格在 61 键上完整填充（已用 Python 校验 `len(keys)==61` 且无缺漏无溢出）。x62—x91 在规范文件中无语义，生成端选择不输出这些键，由 `Injection.py` 自动填为空字符串。
+* **备注**：
+    两次调用均以「总体状态 : 成功 ✅」结束。`LessonPlan.docx` 与 `LessonPlan-zh.docx` 均已正常写入磁盘，分别为 59504 字节与 60879 字节。本次执行全程使用 `PYTHONIOENCODING=utf-8 python Injection.py <文件名>` 命令以预防 Debug #2 与 #3 的 GBK 编码报错，两次调用过程中控制台输出干净，无 `UnicodeEncodeError`。此警告为已知的结构性信息差异，不视为错误。
