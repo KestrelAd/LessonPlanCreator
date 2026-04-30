@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(PYTHONIOENCODING=utf-8 python Injection.py LessonPlan.json)",
+      "Bash(PYTHONIOENCODING=utf-8 python Injection.py LessonPlan-zh.json)",
+      "Bash(PYTHONIOENCODING=utf-8 python Injection.py LessonPlan-revised.json)",
+      "Bash(PYTHONIOENCODING=utf-8 python Injection.py LessonPlan-zh-revised.json)"
+    ]
+  }
+}
