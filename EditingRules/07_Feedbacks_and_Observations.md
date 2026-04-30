@@ -41,3 +41,9 @@
 
 ### 9. 关于重复练习
 - **`[Personal Observation]` 通过设计足够的练习环节增强熟练度：** 对于需要fluency的课程内容，只练习一次往往是不够的，应当酌情设计联系环节，以在理解的基础上确保熟练度和长期记忆。
+
+### 10. 关于 Anticipatory Set 与 Objective and Purpose 的顺序
+- **`[Personal Observation]` Anticipatory Set（钩子）必须发生在 Objective and Purpose（目标宣告）之前，而非相反：** 在生成教案的导入部分时，存在将 WALT/WILF 目标展示放在第一位、再呈现钩子活动的倾向。这与 Madeline Hunter 模型的正确顺序相反——Anticipatory Set 的定义是"在正式上课前"勾起学生兴趣，其教学逻辑是：先激发好奇心，后宣布学习目标，学生的学习动机更强。修订时需将钩子活动（演示游戏、提问）调整到导入Part 1，将 WALT/WILF 展示调整到导入Part 2。
+
+### 11. 关于 Checking for Understanding 作为独立环节的必要性
+- **`[Personal Observation]` Checking for Understanding 应作为 Modeling 之后、Guided Practice 之前的独立教学步骤，而非分散嵌入巡视描述中：** 原始教案中对理解检查的处理是将其分散在"教师巡视时确认"的描述中，未设置独立时间段。Madeline Hunter 模型要求这是一个明确的"决策关卡"——教师通过向小组提问来判断是否可以推进到练习阶段；若理解不足，需重新演示。将其单独列为Body Part（约5分钟）既满足MH模型显式标注的要求，也反映了该环节在教学逻辑上的关键作用。事实上，这两种方式都行，应当根据适配情况酌情选用。
